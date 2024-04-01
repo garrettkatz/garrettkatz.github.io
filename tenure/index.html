@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+<style>
+li {
+    margin: 10px 0;
+}
+</style>
+<title>Garrett Katz Tenure Evaluation</title>
+</head>
+
+<body>
+
+<b>Materials for Garrett Katz's tenure evaluation:</b>
+<ul>
+
+<li><a href="cv_gkatz_tenure.pdf">Curriculum Vitae</a></li>
+
+<li><a href="statement_of_professional_goals_and_objectives.pdf">
+Statement of Professional Goals and Objectives</a></li>
+
+<li>
+Representative publications with brief commentary:
+<br><br>
+My research spans the "full stack" of embodied artificial intelligence (AI), from low-level learning and control to high-level reasoning.  The core research question is how to achieve "vertical integration" across this stack, in a way that is interpretable and facilitates human-machine interaction.  The list below showcases several research threads across this stack, with a representative publication for each, ordered from high- to low-level.  The publication at the middle (tunable neural encoding) is the critical link that integrates across levels.
+
+<br><br>
+
+<!-- <table><tr><td width="20%" style="text-align:center;"> -->
+<!-- High-level reasoning -->
+
+<!-- <img src="whispers_thresh_fade.png" width="90%"></img> -->
+
+<!-- Low-level learning and control -->
+<!-- </td><td> -->
+
+<ol>
+
+<li>
+<b>Katz GE, Tahir N. Towards automated discovery of god-like folk algorithms for rubik’s cube. In Proceedings of the AAAI Conference on Artificial Intelligence 2022 Jun 28 (Vol. 36, No. 9, pp. 10210-10218).</b>
+<br>
+[<a href="aaai2022rubik.pdf">PDF file</a>] &nbsp
+[<a href="https://ojs.aaai.org/index.php/AAAI/article/view/21261">Publication site</a>]
+<br><br>
+This research in symbolic AI is concerned with a very high-level and abstract form of reasoning: the automated discovery of new algorithms.  This particular paper focuses on algorithms for Rubik's cube that optimize two objectives: being "<a href="https://en.wikipedia.org/wiki/God%27s_algorithm">god-like</a>" (returning near-optimal solutions), but also "folk-like" (involving a small set of rules that could reasonably be learned by a human).  The rule sets are synthesized automatically by a symbolic, bi-objective meta-search procedure.  Related work in my lab also covers other forms of abstract reasoning, including automated program synthesis and theorem proving.
+<br><br>
+</li>
+
+<li>
+<b>Katz GE, Huang DW, Hauge T, Gentili R, Reggia J. A novel parsimonious cause-effect reasoning algorithm for robot imitation and plan recognition. IEEE Transactions on Cognitive and Developmental Systems. 2017 Jan 10;10(2):177-93.</b>
+<br>
+[<a href="katz_tcds2017.pdf">PDF file</a>] &nbsp
+[<a href="https://doi.org/10.1109/TCDS.2017.2651643">Publication site</a>]
+<br><br>
+This research in symbolic AI is concerned with cognitive-level robotic imitation learning.  "Cognitive-level" means that the robot does not simply imitate a human's actions.  Rather, it interprets their actions to infer a sequence of sub-goals and imitates the sub-goals.  This enables one-shot generalization to new scenarios where the same goals can be achieved but require different actions.  The system combines cause-effect reasoning to infer goals with automated planning to carry out those goals.  We validated the approach on an upper-body humanoid imitating assembly and maintenance tasks.  This approach was the foundation for many follow-up publications on robotic imitation learning, explainability, and human-robot teaming.
+<br><br>
+</li>
+
+<li>
+<b>Katz GE, Akshay, Davis GP, Gentili RJ, Reggia JA. Tunable neural encoding of a symbolic robotic manipulation algorithm. Frontiers in Neurorobotics. 2021 Dec 14;15:744031.</b>
+<br>
+[<a href="neurob2021tunable.pdf">PDF file</a>] &nbsp
+[<a href="https://doi.org/10.3389/fnbot.2021.744031">Publication site</a>]
+<br><br>
+This research in neurosymbolic AI is concerned with the "vertical integration" of symbolic automated planning and sub-symbolic learning and control.  The system in this paper allows a human to express a robotic manipulation algorithm symbolically (i.e., as a computer program), but the algorithm is then "compiled" into a purely neural-network-based representation.  The neural representation can be optimized by reinforcement learning, achieving better performance than the original (potentially sub-optimal) human-authored procedure.  In other words, symbolic human domain knowledge can be used to "warm-start" a sub-symbolic learning process.  As opposed to most existing neurosymbolic AI, which interfaces symbolic and neural components, our approach <i>emulates</i> symbolic procedural knowledge in a purely neural implementation, like natural intelligence.
+<br><br>
+</li>
+
+<li>
+<b>He B, Katz GE. Will Poppy Fall? Predicting Robot Falls in Advance Based on Visual Input. In 2023 International Conference on Machine Learning and Applications (ICMLA) 2023 Dec 15 (pp. 226-232). IEEE.</b>
+<br>
+[<a href="icmla2023poppy.pdf">PDF file</a>] &nbsp
+[<a href="https://doi.org/10.1109/ICMLA58977.2023.00039">Publication site</a>]
+<br><br>
+This research in deep robotic learning aims to improve balance during humanoid locomotion based on egocentric vision.  A deep neural network was trained to predict falls in advance based on visual input.  The system was compared on a large simulated dataset as well as a smaller real-world dataset collected during walking tests with the Poppy humanoid robot hardware.  Related work in my lab also covers other aspects of humanoid robotic control, including robotic grasping and trajectory optimization.
+<br><br>
+</li>
+
+<li>
+<b>Katz GE, Reggia JA. Using directional fibers to locate fixed points of recurrent neural networks. IEEE Transactions on Neural Networks and Learning Systems. 2017 Aug 24;29(8):3636-46.</b>
+<br>
+[<a href="katz_tnnls2017.pdf">PDF file</a>] &nbsp
+[<a href="https://doi.org/10.1109/TNNLS.2017.2733544">Publication site</a>]
+<br><br>
+This research in numerical optimization is concerned with dynamical system analysis, and in particular, interpreting the dynamics of recurrent neural networks.  It introduces a novel and general method ("directional fiber" continuation) that can systematically enumerate multiple distinct solutions/optima to non-linear equations/objective functions.  This method has value in its own right as a semi-global optimization technique, but it also complements the other research threads in that it can help make neural and neurosymbolic systems more interpretable to human operators.
+<br><br>
+</li>
+
+
+<!-- directional fibers (+followups) -->
+<!-- [icml learning] -->
+<!-- borui poppy (+akshay invited,[xulin],naveed numerical) -->
+<!-- NVM (+ greg followups, kushboo) -->
+<!-- X frontiers neurorob -->
+<!-- X ceril (+late phd followups, rodolphe HRI) -->
+<!-- X aaai rubcub -->
+<!-- consciousness? -->
+
+<!-- <li> -->
+<!-- Katz, G. E., Gupta, K., & Reggia, J. A. (2020, July). Reinforcement-based Program Induction in a Neural Virtual Machine. In 2020 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE. -->
+<!-- <br> -->
+<!-- [<a href="katz_ijcnn2020.pdf">preprint</a>] -->
+<!-- [<a href="https://doi.org/10.1109/IJCNN48605.2020.9207671">publication</a>] -->
+<!-- </li> -->
+
+<!-- <li> -->
+<!-- Salman, A. S., Salman, O. S., & Katz, G. E. (2020, July). Extending CNN classification capabilities using a novel Feature to Image Transformation (FIT) algorithm. In Science and Information Conference (pp. 198-213). Springer, Cham. -->
+<!-- <br> -->
+<!-- [<a href="salman_sai2020.pdf">preprint</a>] -->
+<!-- [<a href="https://doi.org/10.1007/978-3-030-52246-9_14">publication</a>] -->
+<!-- </li> -->
+
+<!-- <li> -->
+<!-- Katz, G. E., Davis, G. P., Gentili, R. J., & Reggia, J. A. (2019). A Programmable Neural Virtual Machine based on a Fast Store-erase Learning Rule. Neural Networks, 119, 10-30. -->
+<!-- <br> -->
+<!-- [<a href="katz_nn2019.pdf">preprint</a>] -->
+<!-- [<a href="https://doi.org/10.1016/j.neunet.2019.07.017">publication</a>] -->
+<!-- </li> -->
+
+<!-- <li> -->
+<!-- Katz, G., Huang, D. W., Hauge, T., Gentili, R., & Reggia, J. (2017). A novel parsimonious cause-effect reasoning algorithm for robot imitation and plan recognition. IEEE Transactions on Cognitive and Developmental Systems, 10(2), 177-193. -->
+<!-- <br> -->
+<!-- [<a href="katz_tcds2017.pdf">preprint</a>] -->
+<!-- [<a href="https://doi.org/10.1109/TCDS.2017.2651643">publication</a>] -->
+<!-- </li> -->
+
+<!-- <li> -->
+<!-- Katz, G. E., & Reggia, J. A. (2017). Using Directional Fibers to Locate Fixed Points of Recurrent Neural Networks. IEEE Transactions on Neural Networks and Learning Systems, 29(8), 3636-3646. -->
+<!-- <br> -->
+<!-- [<a href="katz_tnnls2017.pdf">preprint</a>] -->
+<!-- [<a href="https://doi.org/10.1109/TNNLS.2017.2733544">publication</a>] -->
+<!-- </li> -->
+
+<!-- </ol> -->
+
+<!-- </td></tr></table> -->
+
+</ul>
+
+<a href="http://web.ecs.syr.edu/~gkatz01">To my faculty homepage</a><br>
+
+</body>
+</html>
+
+
+
